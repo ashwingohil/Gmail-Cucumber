@@ -1,0 +1,22 @@
+READ ME
+
+
+Driver file - TestRunner.java
+Feature file - ComposeGmail.feature
+StepDefinition file - StepDefinition
+
+Alter the feature file with relevant email address and password
+Change the path to driver accordingly in StepDefinition
+And Change the path of attachment (dummydata) accordingly
+
+Challenges:
+
+1> Since upload attachment is not with tag name <input> sendkey(File path) method of selenium will not work
+So, workaround is the use of Robot class
+
+2> Confirmation message for "email sent" is a dynamic pop up whose element is shortlived (2 sec). Cannot inspect
+the element
+So, workaround is the use of java mail API which will consume time. Also gmail blocks the account sign in from
+the code.
+
+
